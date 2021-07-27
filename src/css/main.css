@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.d-none {
+  display: none;
+}
+
+.d-none {
+  display: none;
+}
+
 *,
 *::after,
 *::before {
@@ -27,14 +37,30 @@ body {
 }
 
 a,
+a:visited,
+a:active,
 a:hover {
   text-decoration: none;
   font: inherit;
   color: inherit;
 }
 
-h1 {
+.d-none {
+  display: none;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   color: red;
+  background-color: lawngreen;
+}
+
+.page-title {
+  font-size: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

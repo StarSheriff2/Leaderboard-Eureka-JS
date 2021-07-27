@@ -1,15 +1,13 @@
-// variables
-@import 'partials/variables';
-
-// abstracts and base
-@import 'partials/base';
 
 // vendors
 
+// abstracts and base
+@import 'abstracts/index';
+@import 'layout/layout';
+
 // Components
 
-// Sections
-@import 'partials/index';
+// Pages
+@import 'pages/home';
 
-// Utils
-
+// Partials

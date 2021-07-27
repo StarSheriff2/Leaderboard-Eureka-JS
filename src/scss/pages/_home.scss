@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+.main-section {
+  @include d-flex(row);
+  color: red;
+  background-color: lawngreen;
+}
+
+.page-title {
+  font-size: 4rem;
+}

@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 *,
 *::after,
 *::before {
@@ -26,6 +28,8 @@ body {
 }
 
 a,
+a:visited,
+a:active,
 a:hover {
   text-decoration: none;
   font: inherit;

@@ -1,13 +1,6 @@
+import run from './app/run.js';
 import './css/reset.css';
 import './css/main.css';
 
-function component() {
-  const element = document.createElement('div');
+window.onload = run;
 
-  // Lodash, now imported by this script
-  element.innerHTML = 'Hello Webpack';
-
-  return element;
-}
-
-document.body.appendChild(component());
