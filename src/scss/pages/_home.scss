@@ -1,11 +1,40 @@
 @use '../abstracts/' as *;
 
-.main-section {
-  @include d-flex(row);
-  color: red;
-  background-color: lawngreen;
+.page-title {
+  text-align: center;
 }
 
-.page-title {
-  font-size: 4rem;
+.main-section {
+  @include d-flex(row, center, center, wrap);
 }
+
+.section {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.recent-scores-section {
+  @include d-flex(row, space-between, center, wrap);
+
+  background-color: lawngreen;
+
+  &__title {
+    display: inline-block;
+  }
+
+  &__scores {
+    height: 200px;
+    width: 100%;
+    border: black 2px solid;
+    margin-top: 3rem;
+
+    &__score {
+      padding: 1rem;
+    }
+  }
+
+}
+
+
+

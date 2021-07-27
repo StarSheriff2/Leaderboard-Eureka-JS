@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .d-none {
   display: none;
 }
@@ -45,22 +46,69 @@ a:hover {
   color: inherit;
 }
 
+button {
+  padding: 1.5rem 3.5rem;
+  font-size: 1.5rem;
+  border: none;
+}
+
 .d-none {
   display: none;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.page-title {
+  text-align: center;
 }
 
 .main-section {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  color: red;
-  background-color: lawngreen;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.page-title {
-  font-size: 4rem;
+.section {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.recent-scores-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lawngreen;
+}
+.recent-scores-section__title {
+  display: inline-block;
+}
+.recent-scores-section__scores {
+  height: 200px;
+  width: 100%;
+  border: black 2px solid;
+  margin-top: 3rem;
+}
+.recent-scores-section__scores__score {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
