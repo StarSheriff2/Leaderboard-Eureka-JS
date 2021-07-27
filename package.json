@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StarSheriff2/webpack-template.git"
+    "url": "git+https://github.com/StarSheriff2/Leaderboard-Eureka-JS"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/StarSheriff2/webpack-template/issues"
+    "url": "https://github.com/StarSheriff2/Leaderboard-Eureka-JS/issues"
   },
-  "homepage": "https://github.com/StarSheriff2/webpack-template#readme",
+  "homepage": "https://github.com/StarSheriff2/Leaderboard-Eureka-JS#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.2.7",
