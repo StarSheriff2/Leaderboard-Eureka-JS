@@ -1,3 +1,15 @@
-h1 {
-  color: yellow;
-}
+// variables
+@import 'partials/variables';
+
+// abstracts and base
+@import 'partials/base';
+
+// vendors
+
+// Components
+
+// Sections
+@import 'partials/index';
+
+// Utils
+
