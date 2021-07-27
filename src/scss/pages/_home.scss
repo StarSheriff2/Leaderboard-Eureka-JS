@@ -2,6 +2,7 @@
 
 .page-title {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .main-section {
@@ -14,10 +15,14 @@
   padding: 2rem;
 }
 
+/*
+  ========
+  Recent Scores
+  ========
+*/
+
 .recent-scores-section {
   @include d-flex(row, space-between, center, wrap);
-
-  background-color: lawngreen;
 
   &__title {
     display: inline-block;
@@ -33,7 +38,32 @@
       padding: 1rem;
     }
   }
+}
 
+/*
+  ========
+  Add your score
+  ========
+*/
+
+.submit-score-form {
+  margin-top: 3rem;
+
+  &__field-group {
+    padding: 1rem 0;
+
+    &__input {
+      width: 100%;
+
+      &::placeholder {
+        font-size: inherit;
+      }
+    }
+  }
+
+  &__submit-btn {
+    margin: 1.5rem 0;
+  }
 }
 
 

@@ -46,9 +46,15 @@ a:hover {
   color: inherit;
 }
 
+input {
+  border: black solid 2px;
+  padding: 1.5rem 1.5rem;
+  font-size: 2.2rem;
+}
+
 button {
   padding: 1.5rem 3.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: none;
 }
 
@@ -74,6 +80,7 @@ p {
 
 .page-title {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .main-section {
@@ -90,13 +97,17 @@ p {
   padding: 2rem;
 }
 
+/*
+  ========
+  Recent Scores
+  ========
+*/
 .recent-scores-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: lawngreen;
 }
 .recent-scores-section__title {
   display: inline-block;
@@ -109,6 +120,27 @@ p {
 }
 .recent-scores-section__scores__score {
   padding: 1rem;
+}
+
+/*
+  ========
+  Add your score
+  ========
+*/
+.submit-score-form {
+  margin-top: 3rem;
+}
+.submit-score-form__field-group {
+  padding: 1rem 0;
+}
+.submit-score-form__field-group__input {
+  width: 100%;
+}
+.submit-score-form__field-group__input::placeholder {
+  font-size: inherit;
+}
+.submit-score-form__submit-btn {
+  margin: 1.5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
