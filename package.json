@@ -6,19 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "wsass": "sass --watch src/scss:src/css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StarSheriff2/webpack-template.git"
+    "url": "git+https://github.com/StarSheriff2/Leaderboard-Eureka-JS"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/StarSheriff2/webpack-template/issues"
+    "url": "https://github.com/StarSheriff2/Leaderboard-Eureka-JS/issues"
   },
-  "homepage": "https://github.com/StarSheriff2/webpack-template#readme",
+  "homepage": "https://github.com/StarSheriff2/Leaderboard-Eureka-JS#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.2.7",
@@ -28,6 +29,7 @@
     "hint": "^6.1.4",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.36.0",
     "style-loader": "^3.1.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

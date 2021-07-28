@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.d-none {
+  display: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #fff;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  border: black solid 2px;
+  padding: 1.5rem 1.5rem;
+  font-size: 2.2rem;
+}
+
+button {
+  padding: 1.5rem 3.5rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+/*
+  ========
+  Recent Scores
+  ========
+*/
+.recent-scores-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.recent-scores-section__title {
+  display: inline-block;
+}
+.recent-scores-section__scores {
+  width: 100%;
+  border: black 2px solid;
+  margin-top: 3rem;
+}
+.recent-scores-section__scores__score {
+  padding: 1rem;
+}
+
+/*
+  ========
+  Add your score
+  ========
+*/
+.submit-score-form {
+  margin-top: 3rem;
+}
+.submit-score-form__field-group {
+  padding: 1rem 0;
+}
+.submit-score-form__field-group__input {
+  width: 100%;
+}
+.submit-score-form__field-group__input::placeholder {
+  font-size: inherit;
+}
+.submit-score-form__submit-btn {
+  margin: 1.5rem 0;
+}
+
+/*
+  ========================
+
+  Media Queries
+
+  ========================
+*/
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .page-title {
+    text-align: left;
+    max-width: 992px;
+    margin: 4rem auto 0;
+  }
+
+  .main-section {
+    justify-content: space-around;
+  }
+
+  .recent-scores-section {
+    width: auto;
+  }
+
+  .add-score-section {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

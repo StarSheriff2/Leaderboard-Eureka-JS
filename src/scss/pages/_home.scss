@@ -1,0 +1,99 @@
+@import '../abstracts/mixins';
+
+.page-title {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.main-section {
+  @include d-flex(row, center, start, wrap);
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+/*
+  ========
+  Recent Scores
+  ========
+*/
+
+.recent-scores-section {
+  @include d-flex(row, space-between, center, wrap);
+
+  &__title {
+    display: inline-block;
+  }
+
+  &__scores {
+    width: 100%;
+    border: black 2px solid;
+    margin-top: 3rem;
+
+    &__score {
+      padding: 1rem;
+    }
+  }
+}
+
+/*
+  ========
+  Add your score
+  ========
+*/
+
+.submit-score-form {
+  margin-top: 3rem;
+
+  &__field-group {
+    padding: 1rem 0;
+
+    &__input {
+      width: 100%;
+
+      &::placeholder {
+        font-size: inherit;
+      }
+    }
+  }
+
+  &__submit-btn {
+    margin: 1.5rem 0;
+  }
+}
+
+/*
+  ========================
+
+  Media Queries
+
+  ========================
+*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  .page-title {
+    text-align: left;
+    max-width: 992px;
+    margin: 4rem auto 0;
+  }
+
+  .main-section {
+    justify-content: space-around;
+  }
+
+  .recent-scores-section {
+    width: auto;
+  }
+
+  .add-score-section {
+    width: auto;
+  }
+}
