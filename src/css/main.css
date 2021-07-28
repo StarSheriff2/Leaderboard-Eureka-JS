@@ -73,7 +73,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
@@ -101,7 +101,6 @@ p {
   display: inline-block;
 }
 .recent-scores-section__scores {
-  height: 200px;
   width: 100%;
   border: black 2px solid;
   margin-top: 3rem;

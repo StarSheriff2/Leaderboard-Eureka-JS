@@ -6,7 +6,7 @@
 }
 
 .main-section {
-  @include d-flex(row, center, center, wrap);
+  @include d-flex(row, center, start, wrap);
 
   max-width: 900px;
   margin: 0 auto;
@@ -32,7 +32,6 @@
   }
 
   &__scores {
-    height: 200px;
     width: 100%;
     border: black 2px solid;
     margin-top: 3rem;
