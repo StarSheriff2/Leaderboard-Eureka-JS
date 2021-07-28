@@ -19,11 +19,10 @@ export default class ScoresRenderer {
   addListener = () => {
     this.refreshBtn.addEventListener('click', () => {
       const SAMPLE_SCORES = [ // this is temporary input to populate the leaderboard
-        { name: 'Carlos', score: 70, },
-        { name: 'Andrew', score: 100, },
+        { name: 'Carlos', score: 70 },
+        { name: 'Andrew', score: 100 },
       ];
       this.updateLeaderBoard(SAMPLE_SCORES);
     });
   }
 }
-

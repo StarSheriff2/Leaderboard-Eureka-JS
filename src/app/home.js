@@ -32,6 +32,6 @@ const loadStaticContent = () => {
     </section>
   </main>
     `;
-}
+};
 
 export default loadStaticContent;
