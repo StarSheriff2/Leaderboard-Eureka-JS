@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.d-none {
-  display: none;
-}
-
 .d-none {
   display: none;
 }
@@ -59,10 +52,6 @@ button {
   cursor: pointer;
 }
 
-.d-none {
-  display: none;
-}
-
 h1 {
   font-size: 5rem;
 }
@@ -73,10 +62,6 @@ h2 {
 
 p {
   font-size: 2rem;
-}
-
-.d-none {
-  display: none;
 }
 
 .page-title {
