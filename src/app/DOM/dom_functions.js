@@ -1,3 +1,3 @@
-import ScoresRenderer from './render_scores.js';
+import ScoresRenderer from './render_scores';
 
 export default ScoresRenderer;

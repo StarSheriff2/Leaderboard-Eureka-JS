@@ -1,5 +1,5 @@
-import ScoresRenderer from './DOM/dom_functions.js';
-import loadStaticContent from './home.js';
+import ScoresRenderer from './DOM/dom_functions';
+import loadStaticContent from './home';
 
 export default function run() {
   loadStaticContent();

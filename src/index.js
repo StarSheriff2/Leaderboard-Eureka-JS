@@ -1,4 +1,4 @@
-import run from './app/run.js';
+import run from './app/run';
 import './css/reset.css';
 import './css/main.css';
 
