@@ -12,15 +12,6 @@ const loadStaticContent = () => {
         Refresh
       </button>
       <ul class="recent-scores-section__scores">
-        <li class="recent-scores-section__scores__score">
-          <p class="recent-scores-section__scores__score__entry">Andrew: 100</p>
-        </li>
-        <li class="recent-scores-section__scores__score">
-          <p class="recent-scores-section__scores__score__entry">Diego: 40</p>
-        </li>
-        <li class="recent-scores-section__scores__score">
-          <p class="recent-scores-section__scores__score__entry">Armando: 77</p>
-        </li>
       </ul>
     </section>
     <section class="section add-score-section">
