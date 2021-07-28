@@ -17,7 +17,7 @@ TThe leaderboard app displays scores submitted by different players. It also all
 I built this project using webpack and Vanilla JS.
 
 Features:
--
+- Submit a new score to the leaderboard API
 
 ## Live Demo
 
