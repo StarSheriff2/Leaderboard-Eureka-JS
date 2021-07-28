@@ -7,6 +7,9 @@
 
 .main-section {
   @include d-flex(row, center, center, wrap);
+
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .section {
@@ -66,5 +69,33 @@
   }
 }
 
+/*
+  ========================
 
+  Media Queries
+
+  ========================
+*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  .page-title {
+    text-align: left;
+    max-width: 992px;
+    margin: 4rem auto 0;
+  }
+
+  .main-section {
+    justify-content: space-around;
+  }
+
+  .recent-scores-section {
+    width: auto;
+  }
+
+  .add-score-section {
+    width: auto;
+  }
+}
 

@@ -89,6 +89,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .section {
@@ -141,6 +143,34 @@ p {
 }
 .submit-score-form__submit-btn {
   margin: 1.5rem 0;
+}
+
+/*
+  ========================
+
+  Media Queries
+
+  ========================
+*/
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .page-title {
+    text-align: left;
+    max-width: 992px;
+    margin: 4rem auto 0;
+  }
+
+  .main-section {
+    justify-content: space-around;
+  }
+
+  .recent-scores-section {
+    width: auto;
+  }
+
+  .add-score-section {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
