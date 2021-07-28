@@ -56,6 +56,14 @@ To get a local copy up and running, follow these simple example steps.
 3. Now type `npm run start`. It will load the project in your default browser.<br><br>
 **Note:<br>_This command will not stop on its own. If you change something in your project files, it will recompile and reload the page in your browser. To exit, hit "ctrl + c"_**
 
+### To compile SCSS
+
+- `npm run wsass`
+
+### Bundle project
+
+- `npm run build`
+
 ### Linters
 To run the linters included in this repository, you will need to install them locally. **Note:** You will need node.js for this and npm:
 - to install WebHint, run `npm install --save-dev hint@6.x`
