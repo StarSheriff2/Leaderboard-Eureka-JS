@@ -16,6 +16,7 @@ export default class ScoresRenderer {
 
   updateLeaderBoard = (latestScores) => {
     this.leaderboard.innerHTML = '';
+    latestScores.sort((a, b) => a.score - b.score );
     latestScores.forEach((score) => this.loadScore(score));
   }
 
