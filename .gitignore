@@ -3,3 +3,5 @@ leaderboard.code-workspace
 .eslintrc.json
 .hintrc
 .stylelintrc.json
+./coverage/
+coverage
