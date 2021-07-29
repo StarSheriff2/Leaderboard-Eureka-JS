@@ -30,6 +30,20 @@ class LeaderboardAPI {
     const response = await (await fetch(`${this.baseURL}/games/${gameId}/scores/`, { method: 'GET' })).json();
     return response.result;
   }
+
+  submitGameScore = async (gameId, username, score) => {
+    const response = await (await fetch(`${this.baseURL}/games/${gameId}/scores/`, {
+      method: 'POST',
+      body: JSON.stringify({
+        user: `${username}`,
+        score: score,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })).json();
+    return response.result;
+  }
 }
 
 const LB = new LeaderboardAPI('https://us-central1-js-capstone-backend.cloudfunctions.net/api');

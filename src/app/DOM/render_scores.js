@@ -20,7 +20,6 @@ export default class ScoresRenderer {
 
   refreshButtonEventHandler = async () => {
     const SCORES = await LB.getGameScores(LB.games[0].id);
-    console.log(SCORES);
     this.updateLeaderBoard(SCORES);
   }
 
