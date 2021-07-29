@@ -13,4 +13,8 @@ export default class EurekaGame {
   addScore = (newScore) => {
     this.scores = this.scores.concat(newScore);
   }
+
+  updateScores = (APIScores) => {
+    this.scores = APIScores;
+  }
 }

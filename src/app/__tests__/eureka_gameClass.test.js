@@ -89,5 +89,20 @@ describe('EurekaGame class', () => {
       expect(MY_NEW_GAME.scores[0]).not.toBe(OTHER_SCORE);
       expect(MY_NEW_GAME.scores[1]).toBe(OTHER_SCORE);
     });
+
+    test('updates scores of game', () => {
+      // Arrange
+      const MY_NEW_GAME = new EurekaGame('My Game', 3);
+      const NEW_SCORES = [
+        { name: 'James', score: '10' },
+        { name: 'Wes', score: '20' },
+      ];
+
+      // Act
+      MY_NEW_GAME.updateScores(NEW_SCORES);
+
+      // Assert
+      expect(MY_NEW_GAME.scores).toHaveLength(2);
+    });
   });
 });

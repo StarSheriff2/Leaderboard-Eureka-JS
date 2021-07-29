@@ -8,4 +8,5 @@ export default async function run() {
   scoresRenderer.addListener();
   const submitScoreForm = new SubmitScoreForm();
   submitScoreForm.addListener();
+  scoresRenderer.checkForScores();
 }

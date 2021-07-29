@@ -36,13 +36,18 @@ class LeaderboardAPI {
       method: 'POST',
       body: JSON.stringify({
         user: `${username}`,
-        score: score,
+        score,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     })).json();
     return response.result;
+  }
+
+  loadGame = async (gameIndex) => {
+    const LATEST_SCORES = await this.getGameScores(this.games[gameIndex].id);
+    this.games[gameIndex].updateScores(LATEST_SCORES);
   }
 }
 

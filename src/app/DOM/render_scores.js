@@ -16,7 +16,7 @@ export default class ScoresRenderer {
 
   updateLeaderBoard = (latestScores) => {
     this.leaderboard.innerHTML = '';
-    latestScores.sort((a, b) => a.score - b.score );
+    latestScores.sort((a, b) => a.score - b.score);
     latestScores.forEach((score) => this.loadScore(score));
   }
 
@@ -27,5 +27,10 @@ export default class ScoresRenderer {
 
   addListener = () => {
     this.refreshBtn.addEventListener('click', this.refreshButtonEventHandler);
+  }
+
+  checkForScores = async () => {
+    await LB.loadGame(0);
+    if (LB.games[0].getScores().length > 0) this.updateLeaderBoard(LB.games[0].scores);
   }
 }

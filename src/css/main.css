@@ -150,11 +150,11 @@ p {
   }
 
   .recent-scores-section {
-    width: auto;
+    max-width: 500px;
   }
 
   .add-score-section {
-    width: auto;
+    max-width: 300px;
   }
 }
 

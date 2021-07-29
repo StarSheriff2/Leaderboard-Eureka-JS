@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1627510030427" clover="3.2.0">
-  <project timestamp="1627510030427" name="All files">
-    <metrics statements="14" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="5" elements="28" coveredelements="23" complexity="0" loc="14" ncloc="14" packages="1" files="2" classes="2"/>
+<coverage generated="1627593660794" clover="3.2.0">
+  <project timestamp="1627593660794" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="4" elements="21" coveredelements="20" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
     <file name="eureka_gameClass.js" path="/Users/arturoalvarez/Documents/Microverse/Main Curriculum/JS/Leaderboard-Eureka-JS/src/app/logic/eureka_gameClass.js">
-      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="3"/>
-      <line num="3" count="8" type="cond" truecount="4" falsecount="0"/>
-      <line num="4" count="6" type="stmt"/>
-      <line num="5" count="6" type="stmt"/>
-      <line num="6" count="6" type="stmt"/>
-      <line num="9" count="8" type="stmt"/>
-      <line num="11" count="8" type="stmt"/>
-      <line num="13" count="8" type="stmt"/>
+      <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="4"/>
+      <line num="3" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="9" count="9" type="stmt"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="13" count="9" type="stmt"/>
       <line num="14" count="3" type="stmt"/>
-    </file>
-    <file name="leaderboard_API_methods.js" path="/Users/arturoalvarez/Documents/Microverse/Main Curriculum/JS/Leaderboard-Eureka-JS/src/app/logic/leaderboard_API_methods.js">
-      <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
+      <line num="17" count="9" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
