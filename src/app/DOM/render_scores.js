@@ -1,3 +1,5 @@
+import LB from '../logic/leaderboard_API_methods';
+
 export default class ScoresRenderer {
   constructor() {
     this.leaderboard = document.querySelector('.recent-scores-section__scores');
@@ -17,12 +19,9 @@ export default class ScoresRenderer {
   }
 
   addListener = () => {
-    this.refreshBtn.addEventListener('click', () => {
-      const SAMPLE_SCORES = [ // this is temporary input to populate the leaderboard
-        { name: 'Carlos', score: 70 },
-        { name: 'Andrew', score: 100 },
-      ];
-      this.updateLeaderBoard(SAMPLE_SCORES);
+    this.refreshBtn.addEventListener('click', async () => {
+      const SCORES = await LB.getGameScores(LB.games[0].id);
+      this.updateLeaderBoard(SCORES);
     });
   }
 }

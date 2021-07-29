@@ -1,6 +1,6 @@
 import EurekaGame from './eureka_gameClass';
 
-export default class LeaderboardAPI {
+class LeaderboardAPI {
   constructor(baseURL) {
     this.baseURL = baseURL;
     this.games = [];
@@ -25,4 +25,15 @@ export default class LeaderboardAPI {
   addGame = (newGameObj) => {
     this.games = this.games.concat(newGameObj);
   }
+
+  getGameScores = async (gameId) => {
+    const response = await (await fetch(`${this.baseURL}/games/${gameId}/scores/`, { method: 'GET' })).json();
+    return response.result;
+  }
 }
+
+const LB = new LeaderboardAPI('https://us-central1-js-capstone-backend.cloudfunctions.net/api');
+const NEW_GAME = new EurekaGame('Hacker Olympics', '19oARhSmgbuqKfc4VzKI');
+LB.addGame(NEW_GAME);
+
+export default LB;
