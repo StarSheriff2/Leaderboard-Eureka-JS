@@ -18,10 +18,13 @@ export default class ScoresRenderer {
     latestScores.forEach((score) => this.loadScore(score));
   }
 
+  refreshButtonEventHandler = async () => {
+    const SCORES = await LB.getGameScores(LB.games[0].id);
+    console.log(SCORES);
+    this.updateLeaderBoard(SCORES);
+  }
+
   addListener = () => {
-    this.refreshBtn.addEventListener('click', async () => {
-      const SCORES = await LB.getGameScores(LB.games[0].id);
-      this.updateLeaderBoard(SCORES);
-    });
+    this.refreshBtn.addEventListener('click', this.refreshButtonEventHandler);
   }
 }
