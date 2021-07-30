@@ -1,8 +1,11 @@
 @import '../abstracts/mixins';
+@import '../abstracts/variables';
 
 .page-title {
   text-align: center;
-  margin-top: 4rem;
+  padding: 4rem 0;
+  background-color: $primary;
+  color: $primary-font-lg;
 }
 
 .main-section {
@@ -13,7 +16,6 @@
 }
 
 .section {
-  margin-top: 5rem;
   width: 100%;
   padding: 2rem;
 }
@@ -27,17 +29,43 @@
 .recent-scores-section {
   @include d-flex(row, space-between, center, wrap);
 
+  margin-top: 2rem;
+
   &__title {
     display: inline-block;
+    color: $gray-font;
   }
 
   &__scores {
     width: 100%;
-    border: black 2px solid;
     margin-top: 3rem;
+    background-color: $white;
 
     &__score {
       padding: 1rem;
+
+      &:nth-child(odd) {
+        background-color: $primary;
+        color: $primary-font;
+
+        &:hover {
+          background-color: $p-light;
+          color: $primary-font;
+        }
+      }
+
+      &:nth-child(even) {
+        color: $white-font;
+
+        &:hover {
+          background-color: $gray;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in;
+      }
     }
   }
 }
@@ -47,6 +75,10 @@
   Add your score
   ========
 */
+
+.add-score-section__title {
+  color: $gray-font;
+}
 
 .submit-score-form {
   margin-top: 3rem;
