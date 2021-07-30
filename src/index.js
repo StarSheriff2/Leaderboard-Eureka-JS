@@ -1,14 +1,5 @@
-import _ from 'lodash';
-import './style.css';
+import run from './app/run';
+import './css/reset.css';
+import './css/main.css';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
-}
-
-document.body.appendChild(component());
+window.onload = run;

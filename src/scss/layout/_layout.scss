@@ -1,0 +1,57 @@
+@use '../abstracts/' as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-family;
+  color: rgb(0, 0, 0);
+  background-color: $gray;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  border: $gray-font solid 2px;
+  padding: 1.5rem 1.5rem;
+  font-size: 2.2rem;
+}
+
+button {
+  padding: 1.5rem 3.5rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: $p-dark;
+  color: $p-dark-font;
+}
+
+button:hover {
+  background-color: $p-light;
+  color: $primary-font;
+}
