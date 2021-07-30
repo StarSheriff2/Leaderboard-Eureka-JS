@@ -1,8 +1,11 @@
 @import '../abstracts/mixins';
+@import '../abstracts/variables';
 
 .page-title {
   text-align: center;
-  margin-top: 4rem;
+  padding: 4rem 0;
+  background-color: $primary;
+  color: $primary-font-lg;
 }
 
 .main-section {
@@ -13,7 +16,6 @@
 }
 
 .section {
-  margin-top: 5rem;
   width: 100%;
   padding: 2rem;
 }
@@ -27,17 +29,49 @@
 .recent-scores-section {
   @include d-flex(row, space-between, center, wrap);
 
+  margin-top: 2rem;
+
   &__title {
     display: inline-block;
+    color: $gray-font;
   }
 
   &__scores {
     width: 100%;
-    border: black 2px solid;
     margin-top: 3rem;
+    background-color: $white;
 
     &__score {
-      padding: 1rem;
+      padding: 1rem 2rem;
+
+      &__entry {
+        @include d-flex(row, space-between, center);
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in;
+      }
+
+      &:nth-child(odd) {
+        background-color: $primary;
+        color: $primary-font;
+      }
+
+      &:nth-child(even) {
+        color: $white-font;
+
+        &:hover {
+          background-color: $gray;
+          border: $white-font solid 2px;
+        }
+      }
+
+      &:nth-child(odd):hover {
+        background-color: $p-light;
+        color: $primary-font;
+        border: $white solid 2px;
+      }
     }
   }
 }
@@ -47,6 +81,14 @@
   Add your score
   ========
 */
+
+.add-score-section {
+  margin-top: 2rem;
+
+  &__title {
+    color: $gray-font;
+  }
+}
 
 .submit-score-form {
   margin-top: 3rem;
@@ -80,9 +122,8 @@
 
 @media only screen and (min-width: 992px) {
   .page-title {
+    padding-left: 6rem;
     text-align: left;
-    max-width: 992px;
-    margin: 4rem auto 0;
   }
 
   .main-section {

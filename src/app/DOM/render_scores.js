@@ -9,7 +9,7 @@ export default class ScoresRenderer {
   loadScore = (score) => {
     this.leaderboard.insertAdjacentHTML('afterbegin', `
       <li class="recent-scores-section__scores__score">
-        <p class="recent-scores-section__scores__score__entry">${score.user}: ${score.score}</p>
+        <p class="recent-scores-section__scores__score__entry">${score.user}: <span>${score.score}</span></p>
       </li>
     `);
   }
