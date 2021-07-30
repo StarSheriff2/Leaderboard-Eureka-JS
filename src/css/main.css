@@ -118,12 +118,12 @@ p {
 .recent-scores-section__scores__score {
   padding: 1rem;
 }
+.recent-scores-section__scores__score:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in;
+}
 .recent-scores-section__scores__score:nth-child(odd) {
   background-color: #ad1457;
-  color: rgba(255, 255, 255, 0.76);
-}
-.recent-scores-section__scores__score:nth-child(odd):hover {
-  background-color: #e35183;
   color: rgba(255, 255, 255, 0.76);
 }
 .recent-scores-section__scores__score:nth-child(even) {
@@ -132,9 +132,9 @@ p {
 .recent-scores-section__scores__score:nth-child(even):hover {
   background-color: #e1e2e1;
 }
-.recent-scores-section__scores__score:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in;
+.recent-scores-section__scores__score:nth-child(odd):hover {
+  background-color: #e35183;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 /*

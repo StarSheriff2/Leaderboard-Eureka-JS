@@ -44,14 +44,14 @@
     &__score {
       padding: 1rem;
 
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in;
+      }
+
       &:nth-child(odd) {
         background-color: $primary;
         color: $primary-font;
-
-        &:hover {
-          background-color: $p-light;
-          color: $primary-font;
-        }
       }
 
       &:nth-child(even) {
@@ -62,9 +62,9 @@
         }
       }
 
-      &:hover {
-        transform: scale(1.05);
-        transition: transform 0.2s ease-in;
+      &:nth-child(odd):hover {
+        background-color: $p-light;
+        color: $primary-font;
       }
     }
   }
