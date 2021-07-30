@@ -1,5 +1,3 @@
-
-
 # Leaderboard App
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
@@ -10,7 +8,7 @@
 ![](https://img.shields.io/badge/SASS-violet)
 ![](https://img.shields.io/badge/Webpack-green)
 
-The leaderboard app displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard **API** service.
+The leaderboard app displays scores submitted by different players. It also allows you to submit your score. The app consumes data stored in an external **API** service located [here](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
 > I built the app using **webpack** and **ES6** features, such as **modules**.
 
@@ -20,9 +18,8 @@ I built this project using webpack and Vanilla JS. I implemented asynchronous co
 
 Features:
 - Submit a new score to the leaderboard API
-- Get latest scores
+- Get the latest scores
 - See scores by highest score
-
 ## Live Demo
 
 See demo here [https://github.com/StarSheriff2/Leaderboard-Eureka-JS/](https://starsheriff2.github.io/Leaderboard-Eureka-JS/)
@@ -38,6 +35,14 @@ See demo here [https://github.com/StarSheriff2/Leaderboard-Eureka-JS/](https://s
 - SASS 1.35.1
 - Linters: ESLint, Stylint, WebHint
 - VS Code
+
+### About the API
+- This app consumes a public API located at https://us-central1-js-capstone-backend.cloudfunctions.net/api/
+- The API allows the following calls:
+  - Create new game at endpoint `/games/`
+  - Submit a new score at endpoint `/games/:id/scores/`
+  - Get latest scores from `/games/:id/scores/`
+- The API calls are made according to its documentation, which can be accessed [here](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## Getting Started
 
@@ -62,6 +67,7 @@ To get a local copy up and running, follow these simple example steps.
 3. Now type `npm run start`. It will load the project in your default browser.<br><br>
 **Note:<br>_This command will not stop on its own. If you change something in your project files, it will recompile and reload the page in your browser. To exit, hit "ctrl + c"_**
 
+## Development
 ### To compile SCSS
 
 - `npm run wsass`
@@ -70,7 +76,8 @@ To get a local copy up and running, follow these simple example steps.
 
 - `npm run build`
 
-### Run tests
+## Testing
+To test, run
 
 - `npm test`
 
@@ -81,13 +88,13 @@ To run the linters included in this repository, you will need to install them lo
 - for ESlint, `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
 
 To run the linters, go the root directory of your repository, and copy/paste the following commands in your terminal:
-- to check the HTML file, `npx hint .`
+- to check the HTML file, `npx hint`
 - to check the stylesheets, `npx stylelint "**/*.{css,scss}"`
-- to check the JS files, `npx eslint .`
+- to check the JS files, `npx eslint`
 
 ### Usage
 - Submit a new score by entering your name and your score
-- To see latest scores submitted by other players, just hit `Refresh`
+- To see the latest scores submitted by other players, just hit `Refresh`
 
 ## Author
 
