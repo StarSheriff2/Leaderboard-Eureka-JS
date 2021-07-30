@@ -9,6 +9,7 @@ export default class SubmitScoreForm {
     e.preventDefault();
     const username = e.target.childNodes[1].childNodes[1].value;
     const score = parseInt(e.target.childNodes[3].childNodes[1].value, 10);
+    e.target.reset();
     const confirmation = await LB.submitGameScore(LB.games[0].id, username, score);
     return confirmation;
   }
