@@ -5,3 +5,4 @@ leaderboard.code-workspace
 .stylelintrc.json
 ./coverage/
 coverage
+.DS_Store

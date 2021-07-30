@@ -7,17 +7,21 @@
 ![](https://img.shields.io/badge/HTML-red)
 ![](https://img.shields.io/badge/JavaScript-yellow)
 ![](https://img.shields.io/badge/CSS-blue)
+![](https://img.shields.io/badge/SASS-violet)
+![](https://img.shields.io/badge/Webpack-green)
 
-TThe leaderboard app displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard **API** service.
+The leaderboard app displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard **API** service.
 
 > I built the app using **webpack** and **ES6** features, such as **modules**.
 
-![screenshot](./other/README_images/app_screenshot.png)
+![screenshot](./other/app_screenshot.png)
 
-I built this project using webpack and Vanilla JS.
+I built this project using webpack and Vanilla JS. I implemented asynchronous code through **async** and **await** to load scores from the API. The page is fully responsive.
 
 Features:
 - Submit a new score to the leaderboard API
+- Get latest scores
+- See scores by highest score
 
 ## Live Demo
 
@@ -30,6 +34,8 @@ See demo here [https://github.com/StarSheriff2/Leaderboard-Eureka-JS/](https://s
 - Webpack 5.44.0
 - HtmlWebpackPlugin
 - webpack-dev-server
+- Jest 27.0.6
+- SASS 1.35.1
 - Linters: ESLint, Stylint, WebHint
 - VS Code
 
@@ -64,6 +70,10 @@ To get a local copy up and running, follow these simple example steps.
 
 - `npm run build`
 
+### Run tests
+
+- `npm test`
+
 ### Linters
 To run the linters included in this repository, you will need to install them locally. **Note:** You will need node.js for this and npm:
 - to install WebHint, run `npm install --save-dev hint@6.x`
@@ -76,7 +86,8 @@ To run the linters, go the root directory of your repository, and copy/paste the
 - to check the JS files, `npx eslint .`
 
 ### Usage
--
+- Submit a new score by entering your name and your score
+- To see latest scores submitted by other players, just hit `Refresh`
 
 ## Author
 
