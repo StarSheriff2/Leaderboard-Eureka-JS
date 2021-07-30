@@ -116,7 +116,14 @@ p {
   background-color: #f6f5f6;
 }
 .recent-scores-section__scores__score {
-  padding: 1rem;
+  padding: 1rem 2rem;
+}
+.recent-scores-section__scores__score__entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .recent-scores-section__scores__score:hover {
   transform: scale(1.05);
@@ -131,10 +138,12 @@ p {
 }
 .recent-scores-section__scores__score:nth-child(even):hover {
   background-color: #e1e2e1;
+  border: #4b4b4b solid 2px;
 }
 .recent-scores-section__scores__score:nth-child(odd):hover {
   background-color: #e35183;
   color: rgba(255, 255, 255, 0.76);
+  border: #f6f5f6 solid 2px;
 }
 
 /*
@@ -142,6 +151,9 @@ p {
   Add your score
   ========
 */
+.add-score-section {
+  margin-top: 2rem;
+}
 .add-score-section__title {
   color: #838383;
 }
@@ -172,9 +184,8 @@ p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .page-title {
+    padding-left: 6rem;
     text-align: left;
-    max-width: 992px;
-    margin: 4rem auto 0;
   }
 
   .main-section {
