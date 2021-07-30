@@ -14,18 +14,18 @@ The leaderboard app displays scores submitted by different players. It also allo
 
 ![screenshot](./other/app_screenshot.png)
 
+## About
+
 I built this project using webpack and Vanilla JS. I implemented asynchronous code through **async** and **await** to load scores from the API. The page is fully responsive.
 
-Features:
+### Features:
 - Submit a new score to the leaderboard API
 - Get the latest scores
 - See scores by highest score
-## Live Demo
-
+### Live Demo
 See demo here [https://github.com/StarSheriff2/Leaderboard-Eureka-JS/](https://starsheriff2.github.io/Leaderboard-Eureka-JS/)
 
-## Built With
-
+### Built With
 - HTML, CSS, JS
 - NPM 7.18.1
 - Webpack 5.44.0
@@ -68,15 +68,13 @@ To get a local copy up and running, follow these simple example steps.
 **Note:<br>_This command will not stop on its own. If you change something in your project files, it will recompile and reload the page in your browser. To exit, hit "ctrl + c"_**
 
 ## Development
-### To compile SCSS
-
-- `npm run wsass`
 
 ### Bundle project
-
 - `npm run build`
 
-## Testing
+### To compile SCSS
+- `npm run wsass`
+### Testing
 To test, run
 
 - `npm test`
@@ -92,7 +90,8 @@ To run the linters, go the root directory of your repository, and copy/paste the
 - to check the stylesheets, `npx stylelint "**/*.{css,scss}"`
 - to check the JS files, `npx eslint`
 
-### Usage
+## Usage
+
 - Submit a new score by entering your name and your score
 - To see the latest scores submitted by other players, just hit `Refresh`
 
