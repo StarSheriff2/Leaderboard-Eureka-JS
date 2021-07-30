@@ -1,5 +1,4 @@
-import ScoresRenderer from './DOM/dom_functions';
-import SubmitScoreForm from './DOM/submit_score';
+import { ScoresRenderer, SubmitScoreForm } from './DOM/dom_functions';
 import loadStaticContent from './home';
 
 export default async function run() {
